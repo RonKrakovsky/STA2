@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/ron/Projects/buildroot_de10nano/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/ron/Projects/buildroot_de10nano/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
