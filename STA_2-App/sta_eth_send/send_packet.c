@@ -47,8 +47,10 @@ char const *getFFTJSON(struct json_object *jobj)
 
     json_object *jarr = json_object_new_array();
 
-    for (int i = 0; i < MAX_PACKET_LEN; i++)
+    for (int i = 0; i < MAX_PACKET_LEN; i++){
         json_object_array_add(jarr, json_object_new_uint64(arr[i]));
+        printf("index : ",i,"/t value:" , arr[i], "/n");
+    }
 
     json_object_object_add(jobj, "fft_values", jarr);
     json_object *j_sw_val = json_object_new_int(get_sw_state());
@@ -94,6 +96,18 @@ int main(int argc, char const *const *argv)
         routingkey = "fft";
     
     initFft();
+// test -------------------------------------------------------------
+    while(1){
+        fft_size_t arr[MAX_PACKET_LEN];
+        int ret = getFft(arr, NULL);
+        for (int i = 0; i < FFT_SIZE; i++){
+            printf("\n index : %d",i);
+            printf("\t value: %d" , arr[i]);
+        }
+
+    }
+   
+// test -------------------------------------------------------------
 
     jobj = json_object_new_object();
 

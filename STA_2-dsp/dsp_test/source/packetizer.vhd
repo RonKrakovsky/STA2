@@ -20,6 +20,7 @@ entity packetizer is
         cpld_valid_i      : in    std_logic;
         cpld_protection_i : in    std_logic;
         cpld_new_msg_i    : in    std_logic;
+		  
 
         cpld_filters_o : out   std_logic_vector(1 downto 0);
         cpld_valid_o   : out   std_logic;
@@ -33,7 +34,9 @@ entity packetizer is
         out_error      : out   std_logic;
         out_valid      : out   std_logic;
         out_sop        : out   std_logic;
-        out_eop        : out   std_logic
+        out_eop        : out   std_logic;
+		  
+		  data4NCO	: 	out std_logic_vector(9 downto 0)
     );
 end entity packetizer;
 
@@ -144,5 +147,7 @@ begin
         end if;
 
     end process p_state;
+	 
+	 data4NCO <= "0001000100";
 
 end architecture rtl;
