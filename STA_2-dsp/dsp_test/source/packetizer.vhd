@@ -148,6 +148,6 @@ begin
 
     end process p_state;
 	 
-	 data4NCO <= "0001000100";
+	 data4NCO <= "0101010101";
 
 end architecture rtl;

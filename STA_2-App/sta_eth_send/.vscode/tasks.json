@@ -19,7 +19,7 @@
 				"-g",
 				"${fileDirname}/utils.c",
 				"${fileDirname}/fft.c",
-				"${fileDirname}/send_packet.c",
+				"${fileDirname}/receive_fft.c",
 				"-o",
 				"${fileDirname}/${config:program_name}",
 				"-I${config:sysroot_path}/usr/include",

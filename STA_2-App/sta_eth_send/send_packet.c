@@ -100,10 +100,15 @@ int main(int argc, char const *const *argv)
     while(1){
         fft_size_t arr[MAX_PACKET_LEN];
         int ret = getFft(arr, NULL);
-        for (int i = 0; i < FFT_SIZE; i++){
-            printf("\n index : %d",i);
-            printf("\t value: %d" , arr[i]);
+        for (int i = 0; i < MAX_PACKET_LEN; i++){
+            //printf("\n index : %d",i);
+            //printf("\t value: %d" , arr[i]);
+            if(arr[i]>406023828){
+                printf("\n index : %d",i);
+                printf("\t value: %d" , arr[i]);
+            }
         }
+        printf("\n ----------------------------------------- new data");
 
     }
    

@@ -15,7 +15,7 @@ for compile QT project FOLLOW THIS STEPS-
 for compile simple project FOLLOW THIS STEPS- 
 1) open project folder
 2) change in .vscod settings PATH and in cpp Json file too. and c files you want to compile
-3) CTRL+SHIFT+P
+3) press 'CTRL+SHIFT+P' when you on main file code. 
 4) 'run task'
 5) run : "C/C++: arm-none-linux-gnueabihf-gcc build program"
 

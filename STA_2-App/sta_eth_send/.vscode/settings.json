@@ -15,7 +15,7 @@
     },
     "sysroot_path": "/home/ron/Projects/buildroot_de10nano/buildroot/output/host/arm-buildroot-linux-gnueabihf/sysroot",
     "toolchain": "/home/ron/Projects/buildroot_de10nano/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-",
-    "program_name": "send_packet",
+    "program_name": "receive_fft",
     "C_Cpp.default.compilerPath": "/home/ron/Projects/buildroot_de10nano/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-gcc",
     "C_Cpp.autoAddFileAssociations": true,
     "C_Cpp.debugShortcut": false,
